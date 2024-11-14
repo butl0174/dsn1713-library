@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sarala:wght@400;700&display=swap');
+
+/* Set custom variables here */
+
+*{ 
+  box-sizing: border-box;
+}
+
+:root{
+  /* --custom-variables: #bbb22; */
+  --bs-body-bg: #F6F3ED;
+  --bs-primary: #2e483a;
+  --bs-primary-rgb: 46,72,58;
+  --bs-light: #F6F3ED;
+  --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+
+}
+
+
+footer{
+  background-color: #2e483a;
+}
+
+
+.btn{
+  background-color: #2e483a;
+}
+
+.family{ 
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Sarala", sans-serif;
+}
+
+main {
+  background-color: #f6f3ed;
+}
+
+
+#accordion-button{
+ padding: 20px;
+}
+
+#reviews {
+  background-color: #2e483a;
+}
+
+#reviews figcaption {
+  font-size: x-small;
+  margin-top: -16px;
+  margin-bottom: 50px;
+}
+
+#reviews blockquote { 
+padding: 10px 80px 0 80px;
+}
+
+#reviews img {
+  border-radius: 50%;
+}
+
+h1, h2, h3 {
+  font-family: "Merriweather", serif;
+}
+
+#hero {
+  height: 800px;
+  background-color: #E4E6DB;
+  background-image: url(../images/hero-bg-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#hero .d-flex {
+  height: 800px;
+}
+
+#cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cta-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#cta .d-flex {
+  height: 400px;
+}
+
+section:not(#hero):not(#cta){
+  padding: 60px 0;
+}
+
+@media(min-width: 993px){
+  section:not(#hero):not(#cta){
+    padding: 100px 0;
+    /* font-size: 20px; */
+    --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+  }
+}
+
+@media(min-width: 993px){
+ h3{
+  
+  }
+}
